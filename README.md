@@ -1,34 +1,34 @@
 # 📱 CalcMate – Android Calculator App
 
-**CalcMate** is a simple and elegant calculator app for Android built using **Java** and **XML** in Android Studio. It handles basic arithmetic operations and offers a smooth user experience with clear input validation and real-time result display.
+**CalcMate** is a sleek Android app built with Java and XML in Android Studio, offering a powerful calculator alongside productivity tools like task management, area calculations, temperature conversions, and text analysis.
 
 ---
 
 ## ✨ Features
 
-* ➕ Addition
-* ➖ Subtraction
-* ✖️ Multiplication
-* ➗ Division
-* 🔄 Real-time result updates
-* ⚠️ Input validation and error handling
-* 🎨 Clean, intuitive UI
+- 🧮 **Calculator:** Basic and advanced arithmetic with real-time results and input validation.  
+- ✅ **To-Do List:** Add, edit, and complete tasks with an intuitive interface.  
+- 📐 **Area Calculator:** Compute areas for rectangles, circles, and triangles.  
+- 🌡️ **Temperature Converter:** Convert between Celsius, Fahrenheit, and Kelvin.  
+- 📨 **Feedback:** Share suggestions or report issues directly in-app.  
+- ✍️ **Word Counter:** Count words and characters instantly.
 
 ---
 
-## 📟️ Demo
+## 🎥 Demo
 
-> *(Insert a short GIF or link to a demo video here)*
+Demo video coming soon!
 
 ---
 
 ## 🔧 Tech Stack
 
-* **Language**: Java
-* **UI Layout**: XML
-* **IDE**: Android Studio
-* **Min SDK**: 21 (Lollipop)
-* **Target SDK**: 34 (Android 14)
+- **Language:** Java  
+- **UI:** XML  
+- **IDE:** Android Studio  
+- **Min SDK:** API 21 (Android 5.0)  
+- **Target SDK:** API 34 (Android 14)  
+- **Dependencies:** AndroidX, Material Components
 
 ---
 
@@ -52,14 +52,20 @@ CalcMate/
 ├── build.gradle
 └── README.md
 ```
-
 ---
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**:
+### Prerequisites
 
-   ```bash
-   git clone https://github.com/imrulhasanRafi/Advance_Java_Project.git
-   cd calcmate
-   ```
+- Android Studio (latest)  
+- JDK 11+  
+- Git  
+- Android device/emulator (API 21+)
+
+### Installation
+
+```bash
+git clone https://github.com/imrulhasanRafi/Advance_Java_Project.git
+cd Advance_Java_Project
+
