@@ -60,6 +60,6 @@ CalcMate/
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/calcmate.git
+   git clone https://github.com/imrulhasanRafi/Advance_Java_Project.git
    cd calcmate
    ```
