@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- AppBar with back icon -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Feedback Form"
+        app:titleTextColor="@color/white"
+        app:contentInsetStart="0dp"/>
+
+    <!-- ScrollView to handle content scrolling when keyboard appears -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/surface_color"
+        android:fillViewport="true">
+
+        <!-- Main content container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Form header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Share Your Feedback "
+                android:textAlignment="center"
+                android:textColor="@color/on_surface_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Name input field using Material Design components -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:errorEnabled="true"
+                app:hintEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Name"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/on_surface_color"
+                    android:textColorHint="@color/on_surface_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Contact information field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:errorEnabled="true"
+                app:hintEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contactEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email or Phone"
+                    android:inputType="textEmailAddress|textCapWords"
+                    android:textColor="@color/on_surface_color"
+                    android:textColorHint="@color/on_surface_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Feedback message field with character counter -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="500"
+                app:errorEnabled="true"
+                app:hintEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/messageEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="top"
+                    android:hint="Your Feedback"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/on_surface_color"
+                    android:textColorHint="@color/on_surface_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Rating section header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Rate your experience"
+                android:textColor="@color/on_surface_color"
+                android:textSize="16sp" />
+
+            <!-- Star rating container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <!-- Rating star 1 -->
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="onStarClicked"
+                    android:src="@drawable/ic_star_outline"
+                    android:tag="1" />
+
+                <!-- Rating star 2 -->
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="onStarClicked"
+                    android:src="@drawable/ic_star_outline"
+                    android:tag="2" />
+
+                <!-- Rating star 3 -->
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="onStarClicked"
+                    android:src="@drawable/ic_star_outline"
+                    android:tag="3" />
+
+                <!-- Rating star 4 -->
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="onStarClicked"
+                    android:src="@drawable/ic_star_outline"
+                    android:tag="4" />
+
+                <!-- Rating star 5 -->
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:onClick="onStarClicked"
+                    android:src="@drawable/ic_star_outline"
+                    android:tag="5" />
+            </LinearLayout>
+
+            <!-- Submit button with send icon -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitButton"
+                style="@style/FeedbackButton"
+                android:text="Send Feedback"
+                app:backgroundTint="@color/primary_color"
+                app:icon="@drawable/ic_send"
+                app:iconTint="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
