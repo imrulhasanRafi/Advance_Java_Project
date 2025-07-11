@@ -17,7 +17,7 @@
 
 ## 🎥 Demo
 
-Demo video coming soon!
+<table> <tr>  <td><img src="https://i.ibb.co/zhfXW3Pp/home.jpg" alt="home screen" height="300"/></td>  <td><img src="https://i.ibb.co/PzZTFK0z/calculator.jpg" alt="calculator" height="300"/></td> <td><img src="https://i.ibb.co/tTJZzh42/todo.jpg" alt="todo" height="300"/></td> </tr> <tr>  <td><img src="https://i.ibb.co/TMmCvH0G/temp-Convertor.jpg" alt="temp converter" height="300"/></td> <td><img src="https://i.ibb.co/TBrft2P2/convertor.jpg" alt="area convertor" height="300"/></td> <td><img src="https://i.ibb.co/TMMFrNLx/counter.jpg" alt="word counter" height="300"/></td></tr> </table>
 
 ---
 
